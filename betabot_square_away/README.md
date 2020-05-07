@@ -56,29 +56,36 @@ bool success # Did it achieve it?
 
 ### How did you plan the task?
 
+I started with a review of the 2 possible approaches to the problem, namely service-server or action-server. Upon reviewing, I realized that an action server with a series of goals (coordinates) would not only be more intuitive, but also would provide more control over the robot through continuous feedback. Next, I laid down the basic structure of the package using catkin, and edited the xml and cmake list accordingly. After that, I started writing the package implementation in c++ while abiding by ROS REPs and coding best practices as much as possible, i.e. not using global variables or namespaces for example. At this point the package could read the robot's pos and decide whether or not it has reached the set goal. The publisher then publishes to cmd_vel topic, moving the robot in Gazebo. The next step was to tune the speed of the robot so it avoids the lashing due to inertia, and to re-factor the code to be more efficient and less verbose. Finally, I tested the package on multiple inputs and monitored the performance in Gazebo, which was satisfactory.
 
 ### What ROS REPs did you used?
 
+- REP 144 (ROS Package Naming)
+- [CppStyleGuide](http://wiki.ros.org/action/fullsearch/CppStyleGuide?action=fullsearch&context=180&value=linkto%3A"CppStyleGuide")
 
 ### How we could increase the overall performance?
 
+- Making sure to sync the timing
+- Provide a helper function to generate the series of goals automatically, given a shape name and side length
 
 ### List the most time consuming problems you faced
+
+Tuning the speed and control logic based on robot pos.
 
 ---
 
 ## Demo
 Add unlisted youtube/drive video
 
-[Demo](yourlinkhere)
+[Demo](https://youtu.be/VBQChNo0Gfk)
 
 ## Screenshot
 
-[image](yourscreenshot)
+![image](/home/kasem/.config/Typora/typora-user-images/image-20200506094910733.png)
 
 ---
 
-#### NAME:
-#### ID:
+#### NAME: Mohamed Kasem Saber
+#### ID: 201601144
 
 ---
