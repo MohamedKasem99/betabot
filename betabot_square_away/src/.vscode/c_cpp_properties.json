@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/kasem/catkin_ws/devel/include",
+                "/opt/ros/melodic/include",
+                "/home/kasem/catkin_ws/src/betabot_avoider/include",
+                "/home/kasem/catkin_ws/src/imu_tools/imu_complementary_filter/include",
+                "/home/kasem/catkin_ws/src/imu_tools/imu_filter_madgwick/include",
+                "/home/kasem/catkin_ws/src/betabot/move_in_shape/include",
+                "/home/kasem/catkin_ws/src/my_betabot_navigation/include",
+                "/home/kasem/catkin_ws/src/my_cpp_package/include",
+                "/home/kasem/catkin_ws/src/robot_pose_ekf/include",
+                "/home/kasem/catkin_ws/src/parrot_ardrone/sjtu_drone/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
